@@ -1,6 +1,6 @@
-# Jupyter-Setup
-[![GitHub license](https://img.shields.io/badge/License-MIT%20-blue)](https://github.com/clissa/jupyter-setup/blob/main/LICENSE)
-[![GitHub commit](https://img.shields.io/github/last-commit/clissa/jupyter-setup)](https://github.com/clissa/cell-segmentation/commits/master)
+github MIT licens# Jupyter-Setup
+[![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/clissa/custom-jupyter-setup/blob/main/LICENSE)
+[![GitHub commit](https://img.shields.io/github/last-commit/clissa/custom-jupyter-setup)](https://github.com/clissa/custom-jupyter-setup/commits/master)
 
 ## Introduction
 This repository sets up jupyter with useful extensions and custom format and rendering for new notebooks at startup.
