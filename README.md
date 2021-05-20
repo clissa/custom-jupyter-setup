@@ -1,4 +1,4 @@
-# Jupyter-Setup
+# Custom-Jupyter-Setup
 [![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/clissa/custom-jupyter-setup/blob/main/LICENSE)
 [![GitHub commit](https://img.shields.io/github/last-commit/clissa/custom-jupyter-setup)](https://github.com/clissa/custom-jupyter-setup/commits/master)
 
@@ -12,15 +12,20 @@ In particular, this enables:
  - line_numbers
  - custom_setup
  
-The latter is a custom extension configurable by editing the `main.js` file in the *custom_setup* folder.
+The latter is a custom extension configurable by editing the *main.js* file in the `custom_setup` folder.
 **Note:** after editing you have to re-install the extension with `jupyter contrib nbextension install --user`
  
 Also, the *custom.css* file is used for customised rendering of notebook markdown cells. 
 
 ## Installation
 ```
-git clone
-cd <repo>
+# clone
+git@github.com:clissa/custom-jupyter-setup.git
+
+# move in the repository folder
+cd custom-jupyter-setup
+
+# run configuration script
 bash configure.sh
 ```
 
