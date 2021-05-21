@@ -26,16 +26,22 @@ pd.options.display.float_format = '{:,.4f}'.format
 %load_ext autoreload
 %autoreload 2
 
-# add repo's root path to pythonpath
+# add repo root path to pythonpath
 ### Note: this assumes custom python modules are accessible in the root path AND notebooks are in a folder inside root, e.g. root/notebooks
 sys.path.insert(0, Path.cwd().parent)`)
     Jupyter.notebook.insert_cell_at_index('markdown', 3)
+      .set_text(`## Read Data
+Read/Import data here`)
+    Jupyter.notebook.insert_cell_at_index('markdown', 4)
+      .set_text(`# Explorative/Data Visualization
+Explore and visualize data`)
+    Jupyter.notebook.insert_cell_at_index('markdown', 5)
       .set_text(`# Analysis/Modeling
 Do work here`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 4).set_text(`# Results
+    Jupyter.notebook.insert_cell_at_index('markdown', 6).set_text(`# Results
 Show graphs and stats here`)
-    Jupyter.notebook.insert_cell_at_index('markdown', 5)
-      .set_text(`# Conclusions and Next Steps
+    Jupyter.notebook.insert_cell_at_index('markdown', 7)
+      .set_text(`# Open Points and Future Work
 Summarize findings here`)
     // Run all cells
     Jupyter.notebook.execute_all_cells()
