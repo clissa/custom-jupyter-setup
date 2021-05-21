@@ -28,7 +28,7 @@ pd.options.display.float_format = '{:,.4f}'.format
 
 # add repo root path to pythonpath
 ### Note: this assumes custom python modules are accessible in the root path AND notebooks are in a folder inside root, e.g. root/notebooks
-sys.path.insert(0, Path.cwd().parent)`)
+sys.path.insert(0, str(Path.cwd().parent))`)
     Jupyter.notebook.insert_cell_at_index('markdown', 3)
       .set_text(`## Read Data
 Read/Import data here`)
