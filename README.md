@@ -13,7 +13,6 @@ In particular, this enables:
  - custom_setup
  
 The latter is a custom extension configurable by editing the *main.js* file in the `custom_setup` folder.
-**Note:** after editing you have to re-install the extension with `jupyter contrib nbextension install --user`
  
 Also, the *custom.css* file is used for customised rendering of notebook markdown cells. 
 
@@ -28,6 +27,11 @@ cd custom-jupyter-setup
 # run configuration script
 bash configure.sh
 ```
+
+## Update
+In order to update the startup setting with your own version you need to:
+ - modify the *main.js* file in the `custom_setup` folder; in case you don't know how, please check this [blog post](https://towardsdatascience.com/how-to-write-a-jupyter-notebook-extension-a63f9578a38c)
+ - re-install the modified version of **custom_setup** extension by running *update_extension.sh* script, e.g. on linux `bash update_extension.sh` 
 
 ## Acknowledgements
 This repository was inspired by [WillKoehrsen/Data-Analysis/setup](https://github.com/WillKoehrsen/Data-Analysis). 
