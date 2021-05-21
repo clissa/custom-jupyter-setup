@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # install requirements
-conda install -c conda-forge jupyter jupyter_contrib_nbextensions autopep8 
+conda install -y -c conda-forge jupyter jupyter_contrib_nbextensions autopep8 
 
 # install nbextensions
-mv setup ~/.local/share/jupyter/nbextensions/
+cp -r setup ~/.local/share/jupyter/nbextensions/
 jupyter contrib nbextension install --user
 
 #enable useful extensions

@@ -10,6 +10,7 @@ Import libraries and write settings here.`)
     Jupyter.notebook.insert_cell_at_index('code', 2)
       .set_text(`# OS related
 import os
+import sys
 from pathlib import Path
 
 # Data manipulation
@@ -23,7 +24,11 @@ pd.options.display.float_format = '{:,.4f}'.format
 
 # autoreload extension
 %load_ext autoreload
-%autoreload 2`)
+%autoreload 2
+
+# add repo's root path to pythonpath
+### Note: this implies custom python modules are accessible in the root path AND notebooks are in a folder inside root, e.g. root/notebooks
+sys.path.insert(0, Path.cwd().parent)`)
     Jupyter.notebook.insert_cell_at_index('markdown', 3)
       .set_text(`# Analysis/Modeling
 Do work here`)
