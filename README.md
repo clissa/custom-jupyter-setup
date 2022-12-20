@@ -19,7 +19,7 @@ Also, the *custom.css* file is used for customised rendering of notebook markdow
 ## Installation
 ```
 # clone
-git@github.com:clissa/custom-jupyter-setup.git
+git clone git@github.com:clissa/custom-jupyter-setup.git
 
 # move in the repository folder
 cd custom-jupyter-setup
